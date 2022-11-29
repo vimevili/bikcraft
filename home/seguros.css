@@ -1,0 +1,192 @@
+.seguros-bg {
+  background-color: var(--cor-11);
+}
+
+.seguros-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 60px 20px;
+  max-width: 1200px;
+  gap: 40px;
+  align-items: center;
+}
+.prata,
+.ouro {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 24px 24px 24px 60px;
+  background-color: var(--cor-12);
+  border-radius: 4px;
+}
+
+.seguros-container h1 {
+  grid-column: 1/-1;
+  margin: 0px;
+}
+
+.seguros-container h3 {
+  margin-bottom: 40px;
+}
+.lista-prata {
+  margin-bottom: 24px;
+}
+.seguros-container ul {
+  grid-column: 1/-1;
+}
+.seguros-container li {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.seguros-container li::before {
+  content: "";
+  width: 13px;
+  height: 9px;
+  display: inline-block;
+  background-image: url(/img/icones/lista.svg);
+  position: absolute;
+  left: -21px;
+}
+.prata span,
+.ouro span {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+}
+.prata a,
+.ouro a {
+  grid-column: 1;
+}
+.ouro a {
+  margin-top: 30px;
+}
+.lista-prata li + li,
+.lista-ouro li + li {
+  margin-top: 20px;
+}
+.perguntas-container {
+  max-width: 1200px;
+  padding: 60px 20px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+.perguntas-container ul {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.perguntas-container li {
+  box-sizing: border-box;
+  max-width: 1200px;
+  padding: 20px;
+  margin-right: 0;
+  border-radius: 4px;
+}
+.perguntas-container li:nth-child(odd) {
+  background-color: var(--cor-1);
+}
+.perguntas-container p {
+  margin-top: 10px;
+  max-width: 90ch;
+  padding-left: 25px;
+}
+.perguntas-container h1 {
+  margin-bottom: 40px;
+}
+.titulo {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 10px;
+}
+.titulo::before {
+  content: "";
+  width: 12px;
+  height: 8px;
+  display: inline-block;
+  background-color: var(--cor-p1);
+  grid-area: 1/1;
+}
+.titulo::after {
+  content: "";
+  width: 14px;
+  height: 6px;
+  display: inline-block;
+  background-image: url(/img/icones/seta-abrir.svg);
+  grid-column: 3;
+}
+.titulo:hover:after {
+  transform: rotate(180deg);
+  transition: 0.35s;
+}
+.titulo:hover {
+  cursor: pointer;
+}
+.perguntas-container h3 {
+  grid-column: 2;
+}
+
+.seguros-titulo h1 {
+  margin: 0;
+}
+.seguros-container {
+  padding: 0 20px 60px 20px;
+}
+.seguros-titulo {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 40px 20px;
+}
+@media (max-width: 800px) {
+  .seguros-container {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    padding: 40px 15px;
+    max-width: 600px;
+    gap: 40px;
+    align-items: center;
+  }
+  .prata,
+  .ouro {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: var(--cor-12);
+    border-radius: 4px;
+  }
+  .seguros-container h3 {
+    margin-bottom: 20px;
+  }
+  .perguntas-container {
+    padding: 60px 20px;
+  }
+  .seguros-titulo {
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 50px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .seguros-container {
+    padding: 40px 20px 60px 20px;
+    gap: 20px;
+  }
+  .prata,
+  .ouro {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: var(--cor-12);
+    border-radius: 4px;
+  }
+  .prata a,
+  .ouro a {
+    grid-column: 1/-1;
+    justify-self: flex-start;
+  }
+  .seguros-container h3 {
+    margin-bottom: 20px;
+  }
+  .perguntas-container {
+    padding: 40px 20px;
+  }
+}

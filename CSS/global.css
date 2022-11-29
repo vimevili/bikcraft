@@ -1,0 +1,36 @@
+body {
+  margin: 0px;
+  color: var(--cor-0);
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+img[src$=".jpg"] {
+  border-radius: 4px;
+}
+
+h1,
+h2,
+h3,
+p,
+blockquote {
+  margin: 0px;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}

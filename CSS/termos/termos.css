@@ -1,0 +1,48 @@
+#termos {
+  background-color: var(--cor-0);
+}
+.titulo-bg {
+  padding: 60px 0;
+  background-color: var(--cor-11);
+}
+
+.container-titulo {
+  background: url(/img/dec/top-right.svg) no-repeat top right 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
+  box-sizing: border-box;
+}
+.termos h1 {
+  margin: 0px;
+}
+.termos h2 {
+  margin-bottom: 10px;
+}
+.container-termos {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-termos p {
+  margin-bottom: 24px;
+}
+.conta h3,
+.seg h3,
+.estorno h3 {
+  margin: 40px 0 20px 0;
+}
+
+.font-1-l {
+  font-weight: 600px;
+}
+@media (max-width: 480px) {
+  .titulo-bg {
+    padding: 40px 0;
+  }
+  .container-termos {
+    padding: 20px;
+  }
+}

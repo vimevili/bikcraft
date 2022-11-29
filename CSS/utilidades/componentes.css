@@ -1,0 +1,117 @@
+.botao {
+  display: inline-block;
+  max-width: max-content;
+  padding: 16px 24px;
+  border-radius: 4px;
+  background: linear-gradient(#ffbb00, #f2a50c);
+  border: none;
+  box-shadow: 0 1px 2 px rgba (0, 0, 0, 0.1);
+  color: #324200;
+  font: 700 1.125rem/1.35 "Poppins", sans-serif;
+}
+.botao:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+.botao3 {
+  display: inline-block;
+  max-width: max-content;
+  padding: 16px 24px;
+  border-radius: 4px;
+  background: var(--cor-10);
+  border: none;
+  box-shadow: 0 1px 2 px rgba (0, 0, 0, 0.1);
+  color: var(--cor-2);
+  font: 600 1.125rem/1.35 "Poppins", sans-serif;
+}
+.botao3:hover {
+  background: var(--cor-9);
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: #ffffff;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+.header-menu a:hover:after {
+  width: 100%;
+}
+.header-menu a {
+  padding: 16px 0px;
+  display: inline-block;
+  color: #ffffff;
+  font-size: 1.2rem;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+
+/* TECNOLOGIAS */
+
+.customize-container .botao2 {
+  font-weight: bold;
+  color: var(--cor-p1);
+}
+
+.customize-container .botao2::after {
+  content: "";
+  width: 273px;
+  height: 4px;
+  display: block;
+  background-color: currentColor;
+  margin-right: 10px;
+}
+
+.customize-container .botao2:hover {
+  color: var(--cor-0);
+}
+
+/* HEADER */
+
+.customize a {
+  color: var(--cor-p2);
+  font: 400 1.5rem/1.5 "Poppins", sans-serif;
+  margin-bottom: 40px;
+}
+
+@media (max-widht: 800px) {
+  .header-menu a {
+    padding: 12px 16px;
+    background-color: #111111;
+    color: #ffffff;
+    border-radius: 4px;
+  }
+  .header-menu::hover {
+    background-color: #2e2e2e;
+  }
+  .header a::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    justify-items: center;
+  }
+  .header-menu a {
+    background-color: var(--cor-11);
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 0.75rem;
+    justify-content: center;
+  }
+  .header-menu {
+    gap: 12px;
+  }
+}
+
+/* SEGUROS */
+
+.ouro .botao,
+.prata .botao3 {
+  font-size: 1rem;
+}

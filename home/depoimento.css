@@ -1,0 +1,63 @@
+.depoimento-bg {
+  background-color: var(--cor-p1);
+  margin-top: 160px;
+  width: 100vw;
+}
+.depoimento-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.depoimento-container img {
+  width: 100vw;
+  height: 500px;
+  object-fit: cover;
+  grid-column: 1;
+  grid-row: 1/-1;
+  border-radius: 0;
+}
+.depoimento {
+  padding: 40px 40px 80px 80px;
+  align-self: end;
+  grid-column: 2;
+  box-sizing: border-box;
+}
+.depoimento span {
+  display: block;
+  margin-top: 24px;
+}
+.depoimento p {
+  position: relative;
+}
+.depoimento p::before,
+.depoimento p::after {
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--cor-p2);
+  position: absolute;
+}
+.depoimento p::before {
+  content: "“";
+  left: -50px;
+  top: -20px;
+}
+.depoimento p::after {
+  content: "”";
+}
+
+@media (max-width: 800px) {
+  .depoimento-bg {
+    margin-top: 80px;
+  }
+  .depoimento-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .depoimento-container img {
+    height: 250px;
+  }
+  .depoimento {
+    padding: 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
